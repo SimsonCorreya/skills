@@ -1,0 +1,15 @@
+{
+  "name": "skills",
+  "description": "Claude Code skills. Each one installs on its own.",
+  "owner": { "name": "Simson Correya" },
+  "plugins": [
+    {
+      "name": "image-to-vector",
+      "source": "./image-to-vector",
+      "description": "Recreate a logo, icon or mascot from a reference image as accurate SVG: traces the pixels, proves the match with an overlay, restyles and optionally animates it.",
+      "version": "1.0.0",
+      "category": "design",
+      "tags": ["svg", "vector", "trace", "icon", "logo", "mascot", "animation"]
+    }
+  ]
+}

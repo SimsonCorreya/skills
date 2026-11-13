@@ -1,0 +1,38 @@
+{
+  "_about": "The bundled example: a 400x440 flat owl with dark outlines and a caption. The caption is left out with `ignore`. The pupils are the outline colour, so ink has no dropThickerThan (it would remove them as 'thick areas'). grow and silhouetteGrow win back the anti-aliased edges, so the outlines keep the reference's weight.",
+  "palette": {
+    "background": [255, 255, 255],
+    "body": [232, 122, 46],
+    "wing": [183, 83, 34],
+    "belly": [250, 226, 180],
+    "face": [251, 237, 213],
+    "eye": [255, 255, 255],
+    "iris": [34, 164, 152],
+    "beak": [250, 196, 40],
+    "line": [17, 16, 29]
+  },
+  "background": "background",
+  "ignore": [[0, 392, 400, 440]],
+  "silhouetteGrow": -0.6,
+  "layers": [
+    { "name": "body", "colours": ["body"], "close": 1, "fillHoles": 30, "minArea": 40, "grow": 0.8 },
+    { "name": "wing", "colours": ["wing"], "minArea": 40, "grow": 0.8 },
+    { "name": "belly", "colours": ["belly"], "fillHoles": 30, "minArea": 40, "grow": 0.8 },
+    { "name": "face", "colours": ["face"], "fillHoles": 30, "minArea": 40, "grow": 0.8 },
+    { "name": "eye", "colours": ["eye"], "minArea": 20, "tolerance": 0.4, "grow": 0.8 },
+    { "name": "iris", "colours": ["iris"], "minArea": 20, "tolerance": 0.4, "grow": 0.8 },
+    { "name": "beak", "colours": ["beak"], "minArea": 20, "tolerance": 0.4, "grow": 0.8 }
+  ],
+  "ink": { "colours": ["line"], "minArea": 20, "tolerance": 0.35 },
+  "compareColours": {
+    "silhouette": "#11101D",
+    "body": "#E87A2E",
+    "wing": "#B75322",
+    "belly": "#FAE2B4",
+    "face": "#FBEDD5",
+    "eye": "#FFFFFF",
+    "iris": "#22A498",
+    "beak": "#FAC428",
+    "ink": "#11101D"
+  }
+}
